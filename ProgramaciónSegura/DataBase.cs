@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Configuration;
@@ -20,4 +21,29 @@ namespace ProgramaciónSegura
         }
     }
 
-}
+    public static DataTable validarUsuario(string usuario, string contraseña)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection cn = DataBase.Open())
+            {
+                SqlCommand cmd = new SqlCommand("VALIDAR_CREDENCIALES", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@NOM_USUARIO", usuario);
+                cmd.Parameters.AddWithValue("@CONTRASEÑA", contraseña);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                try
+                {
+                    da.Fill(dt);
+                }
+                catch (Exception)
+                {
+                    // Manejo de errores
+                    throw;
+                    
+                }
+                return dt;
+            }
+        }
+
+    }
