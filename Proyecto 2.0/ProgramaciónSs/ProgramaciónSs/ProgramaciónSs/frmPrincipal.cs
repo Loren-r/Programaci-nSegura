@@ -13,6 +13,7 @@ namespace ProgramaciónSs
     public partial class frmPrincipal : Form
     {
         private Usuario usuarioActual;
+        private Usuario NOM_NIVEL;
         public frmPrincipal(Usuario usuario)
         {
             InitializeComponent();
@@ -20,6 +21,14 @@ namespace ProgramaciónSs
 
             lblUsuario.Text = usuarioActual.NOM_USUARIO;
             lblNivel.Text = usuarioActual.NOMBRE_NIVEL;
+            if (NOM_NIVEL = "ADMINISTRADOR")
+            {
+                agregarUsuarioToolStripMenu.Visible = true;
+            }
+            else
+            {
+                agregarUsuarioToolStripMenu.Visible = false;
+            }
         }
 
         public frmPrincipal()
@@ -32,6 +41,25 @@ namespace ProgramaciónSs
             frmLogin loginForm = new frmLogin();
             loginForm.Show();
             this.Close();
+        }
+
+        private void lblNivel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin loginForm = new frmLogin();
+            loginForm.Show();
+            this.Close();
+        }
+
+        private void agregarUsuarioToolStripMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMantenedorUsuario MantenedorForm = new frmMantenedorUsuario();
+            MantenedorForm.Show();
         }
     }
 }

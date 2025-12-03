@@ -16,6 +16,9 @@ namespace ProgramaciónSs
             //nombre del usuario
             public string NOM_USUARIO { get; set; }
 
+            //nombre y apellido 
+             public string NOMBRE_COMPLETO { get; set; }
+
             //contraseña del usuario
             public string CONTRASEÑA { get; set; }
 
@@ -26,5 +29,7 @@ namespace ProgramaciónSs
             public string NOMBRE_NIVEL { get; set; }
 
         }
+
+        
     
 }
