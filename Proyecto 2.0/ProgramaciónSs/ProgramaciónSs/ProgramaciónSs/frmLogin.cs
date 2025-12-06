@@ -8,7 +8,6 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static ProgramaciónSs.Hash;
 using ProgramaciónSs;
 
 namespace ProgramaciónSs

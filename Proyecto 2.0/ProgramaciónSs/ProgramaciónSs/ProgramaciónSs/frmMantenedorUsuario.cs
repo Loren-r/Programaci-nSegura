@@ -47,11 +47,22 @@ namespace ProgramaciónSs
                 return;
             }
 
+            try
+            {
+                MantendorUsuario mant = new MantendorUsuario();
+                mant.CargarUsuario(txtbUsuario.Text, txtbNombreApellido.Text, txtbCorreo.Text, txtbContraseña.Text, cboxNivel.Text);
 
-           
-           
 
-            MessageBox.Show("Usuario registrado correctamente");
+                this.Hide();
+                frmPrincipal principalForm = new frmPrincipal();
+                principalForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al agregar el usuario: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Show();
+            }   
         }
 
 
