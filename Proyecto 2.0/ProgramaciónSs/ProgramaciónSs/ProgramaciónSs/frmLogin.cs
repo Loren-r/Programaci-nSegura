@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ProgramaciónSs.Hash;
+using ProgramaciónSs;
 
 namespace ProgramaciónSs
 {
@@ -38,11 +41,16 @@ namespace ProgramaciónSs
 
 
             }
+            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();   
+            this.Close();
+            Application.Exit();
+
         }
+
+
     }
 }

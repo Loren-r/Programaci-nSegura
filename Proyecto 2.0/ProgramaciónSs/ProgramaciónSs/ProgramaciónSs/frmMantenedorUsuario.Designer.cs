@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.gboxDatos = new System.Windows.Forms.GroupBox();
-            this.lblUsuarioM = new System.Windows.Forms.Label();
-            this.lblNombreCompleto = new System.Windows.Forms.Label();
-            this.lblNivel = new System.Windows.Forms.Label();
-            this.lblContraseñaM = new System.Windows.Forms.Label();
-            this.lblContraseñaConfirmar = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.txtbNombreApellido = new System.Windows.Forms.TextBox();
-            this.txtbUsuario = new System.Windows.Forms.TextBox();
-            this.txtbCorreo = new System.Windows.Forms.TextBox();
-            this.txtbContraseña = new System.Windows.Forms.TextBox();
-            this.txtbConfContraseña = new System.Windows.Forms.TextBox();
             this.cboxNivel = new System.Windows.Forms.ComboBox();
+            this.txtbConfContraseña = new System.Windows.Forms.TextBox();
+            this.txtbContraseña = new System.Windows.Forms.TextBox();
+            this.txtbCorreo = new System.Windows.Forms.TextBox();
+            this.txtbUsuario = new System.Windows.Forms.TextBox();
+            this.txtbNombreApellido = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblContraseñaConfirmar = new System.Windows.Forms.Label();
+            this.lblContraseñaM = new System.Windows.Forms.Label();
+            this.lblNivel = new System.Windows.Forms.Label();
+            this.lblNombreCompleto = new System.Windows.Forms.Label();
+            this.lblUsuarioM = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
@@ -70,106 +70,6 @@
             this.gboxDatos.TabStop = false;
             this.gboxDatos.Text = "Datos Usuario";
             // 
-            // lblUsuarioM
-            // 
-            this.lblUsuarioM.AutoSize = true;
-            this.lblUsuarioM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioM.Location = new System.Drawing.Point(93, 76);
-            this.lblUsuarioM.Name = "lblUsuarioM";
-            this.lblUsuarioM.Size = new System.Drawing.Size(57, 17);
-            this.lblUsuarioM.TabIndex = 0;
-            this.lblUsuarioM.Text = "Usuario";
-            // 
-            // lblNombreCompleto
-            // 
-            this.lblNombreCompleto.AutoSize = true;
-            this.lblNombreCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCompleto.Location = new System.Drawing.Point(27, 38);
-            this.lblNombreCompleto.Name = "lblNombreCompleto";
-            this.lblNombreCompleto.Size = new System.Drawing.Size(123, 17);
-            this.lblNombreCompleto.TabIndex = 1;
-            this.lblNombreCompleto.Text = "Nombre y Apellido";
-            // 
-            // lblNivel
-            // 
-            this.lblNivel.AutoSize = true;
-            this.lblNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNivel.Location = new System.Drawing.Point(367, 79);
-            this.lblNivel.Name = "lblNivel";
-            this.lblNivel.Size = new System.Drawing.Size(39, 17);
-            this.lblNivel.TabIndex = 2;
-            this.lblNivel.Text = "Nivel";
-            // 
-            // lblContraseñaM
-            // 
-            this.lblContraseñaM.AutoSize = true;
-            this.lblContraseñaM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseñaM.Location = new System.Drawing.Point(69, 147);
-            this.lblContraseñaM.Name = "lblContraseñaM";
-            this.lblContraseñaM.Size = new System.Drawing.Size(81, 17);
-            this.lblContraseñaM.TabIndex = 3;
-            this.lblContraseñaM.Text = "Contraseña";
-            this.lblContraseñaM.Click += new System.EventHandler(this.lblContraseñaM_Click);
-            // 
-            // lblContraseñaConfirmar
-            // 
-            this.lblContraseñaConfirmar.AutoSize = true;
-            this.lblContraseñaConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseñaConfirmar.Location = new System.Drawing.Point(6, 186);
-            this.lblContraseñaConfirmar.Name = "lblContraseñaConfirmar";
-            this.lblContraseñaConfirmar.Size = new System.Drawing.Size(146, 17);
-            this.lblContraseñaConfirmar.TabIndex = 4;
-            this.lblContraseñaConfirmar.Text = "Confirmar Contraseña";
-            this.lblContraseñaConfirmar.Click += new System.EventHandler(this.lblContraseñaConfirmar_Click);
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(99, 112);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(51, 17);
-            this.lblCorreo.TabIndex = 5;
-            this.lblCorreo.Text = "Correo";
-            // 
-            // txtbNombreApellido
-            // 
-            this.txtbNombreApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbNombreApellido.Location = new System.Drawing.Point(156, 38);
-            this.txtbNombreApellido.Name = "txtbNombreApellido";
-            this.txtbNombreApellido.Size = new System.Drawing.Size(316, 22);
-            this.txtbNombreApellido.TabIndex = 6;
-            // 
-            // txtbUsuario
-            // 
-            this.txtbUsuario.Location = new System.Drawing.Point(156, 76);
-            this.txtbUsuario.Name = "txtbUsuario";
-            this.txtbUsuario.Size = new System.Drawing.Size(186, 23);
-            this.txtbUsuario.TabIndex = 7;
-            // 
-            // txtbCorreo
-            // 
-            this.txtbCorreo.Location = new System.Drawing.Point(156, 112);
-            this.txtbCorreo.Name = "txtbCorreo";
-            this.txtbCorreo.Size = new System.Drawing.Size(186, 23);
-            this.txtbCorreo.TabIndex = 8;
-            // 
-            // txtbContraseña
-            // 
-            this.txtbContraseña.Location = new System.Drawing.Point(156, 147);
-            this.txtbContraseña.Name = "txtbContraseña";
-            this.txtbContraseña.PasswordChar = '*';
-            this.txtbContraseña.Size = new System.Drawing.Size(186, 23);
-            this.txtbContraseña.TabIndex = 9;
-            // 
-            // txtbConfContraseña
-            // 
-            this.txtbConfContraseña.Location = new System.Drawing.Point(156, 186);
-            this.txtbConfContraseña.Name = "txtbConfContraseña";
-            this.txtbConfContraseña.PasswordChar = '*';
-            this.txtbConfContraseña.Size = new System.Drawing.Size(186, 23);
-            this.txtbConfContraseña.TabIndex = 10;
-            // 
             // cboxNivel
             // 
             this.cboxNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,6 +82,106 @@
             this.cboxNivel.Name = "cboxNivel";
             this.cboxNivel.Size = new System.Drawing.Size(153, 24);
             this.cboxNivel.TabIndex = 11;
+            // 
+            // txtbConfContraseña
+            // 
+            this.txtbConfContraseña.Location = new System.Drawing.Point(156, 186);
+            this.txtbConfContraseña.Name = "txtbConfContraseña";
+            this.txtbConfContraseña.PasswordChar = '*';
+            this.txtbConfContraseña.Size = new System.Drawing.Size(186, 23);
+            this.txtbConfContraseña.TabIndex = 10;
+            // 
+            // txtbContraseña
+            // 
+            this.txtbContraseña.Location = new System.Drawing.Point(156, 147);
+            this.txtbContraseña.Name = "txtbContraseña";
+            this.txtbContraseña.PasswordChar = '*';
+            this.txtbContraseña.Size = new System.Drawing.Size(186, 23);
+            this.txtbContraseña.TabIndex = 9;
+            // 
+            // txtbCorreo
+            // 
+            this.txtbCorreo.Location = new System.Drawing.Point(156, 112);
+            this.txtbCorreo.Name = "txtbCorreo";
+            this.txtbCorreo.Size = new System.Drawing.Size(186, 23);
+            this.txtbCorreo.TabIndex = 8;
+            // 
+            // txtbUsuario
+            // 
+            this.txtbUsuario.Location = new System.Drawing.Point(156, 76);
+            this.txtbUsuario.Name = "txtbUsuario";
+            this.txtbUsuario.Size = new System.Drawing.Size(186, 23);
+            this.txtbUsuario.TabIndex = 7;
+            // 
+            // txtbNombreApellido
+            // 
+            this.txtbNombreApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbNombreApellido.Location = new System.Drawing.Point(156, 38);
+            this.txtbNombreApellido.Name = "txtbNombreApellido";
+            this.txtbNombreApellido.Size = new System.Drawing.Size(316, 22);
+            this.txtbNombreApellido.TabIndex = 6;
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Location = new System.Drawing.Point(99, 112);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(51, 17);
+            this.lblCorreo.TabIndex = 5;
+            this.lblCorreo.Text = "Correo";
+            // 
+            // lblContraseñaConfirmar
+            // 
+            this.lblContraseñaConfirmar.AutoSize = true;
+            this.lblContraseñaConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseñaConfirmar.Location = new System.Drawing.Point(6, 186);
+            this.lblContraseñaConfirmar.Name = "lblContraseñaConfirmar";
+            this.lblContraseñaConfirmar.Size = new System.Drawing.Size(146, 17);
+            this.lblContraseñaConfirmar.TabIndex = 4;
+            this.lblContraseñaConfirmar.Text = "Confirmar Contraseña";
+            this.lblContraseñaConfirmar.Click += new System.EventHandler(this.lblContraseñaConfirmar_Click);
+            // 
+            // lblContraseñaM
+            // 
+            this.lblContraseñaM.AutoSize = true;
+            this.lblContraseñaM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseñaM.Location = new System.Drawing.Point(69, 147);
+            this.lblContraseñaM.Name = "lblContraseñaM";
+            this.lblContraseñaM.Size = new System.Drawing.Size(81, 17);
+            this.lblContraseñaM.TabIndex = 3;
+            this.lblContraseñaM.Text = "Contraseña";
+            this.lblContraseñaM.Click += new System.EventHandler(this.lblContraseñaM_Click);
+            // 
+            // lblNivel
+            // 
+            this.lblNivel.AutoSize = true;
+            this.lblNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNivel.Location = new System.Drawing.Point(367, 79);
+            this.lblNivel.Name = "lblNivel";
+            this.lblNivel.Size = new System.Drawing.Size(39, 17);
+            this.lblNivel.TabIndex = 2;
+            this.lblNivel.Text = "Nivel";
+            // 
+            // lblNombreCompleto
+            // 
+            this.lblNombreCompleto.AutoSize = true;
+            this.lblNombreCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreCompleto.Location = new System.Drawing.Point(27, 38);
+            this.lblNombreCompleto.Name = "lblNombreCompleto";
+            this.lblNombreCompleto.Size = new System.Drawing.Size(123, 17);
+            this.lblNombreCompleto.TabIndex = 1;
+            this.lblNombreCompleto.Text = "Nombre y Apellido";
+            // 
+            // lblUsuarioM
+            // 
+            this.lblUsuarioM.AutoSize = true;
+            this.lblUsuarioM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarioM.Location = new System.Drawing.Point(93, 76);
+            this.lblUsuarioM.Name = "lblUsuarioM";
+            this.lblUsuarioM.Size = new System.Drawing.Size(57, 17);
+            this.lblUsuarioM.TabIndex = 0;
+            this.lblUsuarioM.Text = "Usuario";
             // 
             // btnAceptar
             // 
@@ -205,6 +205,7 @@
             this.btnLimpiar.TabIndex = 2;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAtras
             // 
@@ -230,6 +231,7 @@
             this.Controls.Add(this.gboxDatos);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmMantenedorUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenedor Usuario";
             this.gboxDatos.ResumeLayout(false);
             this.gboxDatos.PerformLayout();

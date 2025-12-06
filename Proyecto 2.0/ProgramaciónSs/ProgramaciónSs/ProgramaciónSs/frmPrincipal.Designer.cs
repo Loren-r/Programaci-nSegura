@@ -83,6 +83,7 @@
             this.lblUsuario.Size = new System.Drawing.Size(64, 20);
             this.lblUsuario.TabIndex = 4;
             this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // lblNivel
             // 
@@ -118,14 +119,14 @@
             // agregarUsuarioToolStripMenu
             // 
             this.agregarUsuarioToolStripMenu.Name = "agregarUsuarioToolStripMenu";
-            this.agregarUsuarioToolStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.agregarUsuarioToolStripMenu.Size = new System.Drawing.Size(159, 22);
             this.agregarUsuarioToolStripMenu.Text = "Agregar Usuario";
             this.agregarUsuarioToolStripMenu.Click += new System.EventHandler(this.agregarUsuarioToolStripMenu_Click);
             // 
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
@@ -145,6 +146,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Página Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

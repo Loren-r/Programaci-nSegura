@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,37 +39,43 @@ namespace ProgramaciónSs
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            string NOMBRE_COMPLETO = txtbNombreApellido.Text;
-            string NOM_USUARIO = txtbUsuario.Text;
-            string CORREO = txtbCorreo.Text;
-            string CONTRASEÑA = txtbContraseña.Text;
-            int ID_NIVEL;
-
-           switch (cboxNivel.Text)
+            
+            if (txtbContraseña.Text != txtbConfContraseña.Text)
             {
-                case "Persona":
-                    ID_NIVEL = 1;
-                    break;
-
-                case "Empresa":
-                    ID_NIVEL = 2;
-                    break;
-
-                case "Administrador":
-                    ID_NIVEL = 3;
-                    break;
-
-                default:
-                    MessageBox.Show("Seleccione un nivel válido");
-                    return;
-
+                MessageBox.Show("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpiarContraseña();
+                return;
             }
 
 
+           
+           
+
+            MessageBox.Show("Usuario registrado correctamente");
+        }
 
 
+        private void limpiar()
+        {
+            txtbUsuario.Clear();
+            txtbNombreApellido.Clear();
+            txtbContraseña.Clear();
+            txtbConfContraseña.Clear();
+            txtbCorreo.Clear();
+            cboxNivel.SelectedIndex = -1;
+            txtbUsuario.Focus();
+      
+        }
+        private void limpiarContraseña()
+        {
+            txtbContraseña.Clear();
+            txtbConfContraseña.Clear();
+        }
 
-
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiar();
         }
     }
 }
+
